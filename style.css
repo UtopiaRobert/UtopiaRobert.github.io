@@ -1,0 +1,68 @@
+/* style.css for Robert Redecker's GitHub Homepage */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #3a5335;
+  color: #fff;
+  padding: 1.5em 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0.2em 0;
+  font-size: 1.8em;
+}
+
+nav {
+  margin-top: 1em;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #dbead7;
+  padding: 2em;
+  text-align: center;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.75em 1.5em;
+  background-color: #3a5335;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #2e4229;
+}
+
+section {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  margin-top: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  colo
