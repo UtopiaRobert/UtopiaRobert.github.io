@@ -1,68 +1,88 @@
-/* style.css for Robert Redecker's GitHub Homepage */
-
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+/* Reset basic styles */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f4f1ea; /* light tan */
+  color: #3c3c2b; /* earthy dark brown */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
 header {
-  background-color: #3a5335;
+  background-color: #6a8e7f; /* muted sage green */
   color: #fff;
-  padding: 1.5em 1em;
+  padding: 30px 20px;
   text-align: center;
 }
 
 header h1 {
-  margin: 0.2em 0;
-  font-size: 1.8em;
+  font-size: 2.4em;
+  margin-bottom: 10px;
 }
 
 nav {
-  margin-top: 1em;
+  margin-top: 10px;
 }
 
 nav a {
   color: #fff;
-  margin: 0 1em;
   text-decoration: none;
+  margin: 0 12px;
   font-weight: bold;
+  transition: opacity 0.2s;
 }
 
-.hero {
-  background-color: #dbead7;
-  padding: 2em;
-  text-align: center;
+nav a:hover {
+  opacity: 0.8;
 }
 
-.cta {
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #fffdf8;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+main h2 {
+  color: #6a8e7f;
+  margin-bottom: 10px;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+a.cta, .blog-button {
   display: inline-block;
-  margin-top: 1em;
-  padding: 0.75em 1.5em;
-  background-color: #3a5335;
+  background-color: #b76d34; /* earthy brown-orange */
   color: white;
+  padding: 12px 24px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
-.cta:hover {
-  background-color: #2e4229;
+a.cta:hover, .blog-button:hover {
+  background-color: #93592b;
 }
 
-section {
-  padding: 2em;
-  max-width: 800px;
-  margin: auto;
-  background-color: white;
-  margin-top: 1em;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Footer */
+footer {
+  background-color: #6a8e7f;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  border-radius: 0 0 10px 10px;
 }
-
-section h2 {
-  colo
