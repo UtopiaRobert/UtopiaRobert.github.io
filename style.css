@@ -42,10 +42,13 @@ header {
 
 nav {
   margin-top: 10px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
 
 nav a {
-  margin: 0 14px;
+  margin: 6px 14px;
   font-weight: bold;
   color: #d4a373;
   transition: color 0.3s;
@@ -77,4 +80,37 @@ a.cta, .blog-button {
   transition: background 0.3s;
 }
 
-a.cta:hover, .blog-button:hover
+a.cta:hover, .blog-button:hover {
+  background-color: #e6b87b;
+  color: #1a1a1a;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #bcbcbc;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  header {
+    padding: 30px 10px;
+  }
+
+  nav a {
+    margin: 8px;
+    display: inline-block;
+  }
+}
