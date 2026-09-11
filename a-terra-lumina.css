@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+:root {
+  --atl-paper: #f7f0dc;
+  --atl-paper-deep: #eee0be;
+  --atl-ink: #273027;
+  --atl-soft: #5f665b;
+  --atl-green: #2f462b;
+  --atl-green-deep: #23381f;
+  --atl-clay: #9e6046;
+  --atl-rule: rgba(126,101,58,.30);
+  --atl-shadow: rgba(56,45,27,.12);
+  --atl-serif: "EB Garamond", Garamond, Georgia, serif;
+  --atl-hand: "Architects Daughter", "Segoe Print", cursive;
+  --atl-ui: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+}
+
+.atl-page {
+  width: min(1420px, calc(100% - 48px));
+  margin: 0 auto;
+  color: var(--atl-ink);
+  background:
+    radial-gradient(circle at 15% 7%, rgba(255,255,255,.26), transparent 25rem),
+    radial-gradient(rgba(98,73,35,.03) .7px, transparent .8px),
+    var(--atl-paper);
+  background-size: auto, 7px 7px, auto;
+  border-inline: 1px solid var(--atl-rule);
+  box-shadow: 0 22px 50px var(--atl-shadow);
+  overflow: hidden;
+}
+
+.atl-hero {
+  position: relative;
+  width: 100%;
+  height: min(67vw, 760px);
+  min-height: 480px;
+  background: var(--atl-green-deep);
+  border-bottom: 1px solid var(--atl-rule);
+}
+.atl-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 54%;
+}
+.atl-hero-caption {
+  position: absolute;
+  left: 22px;
+  bottom: 18px;
+  padding: .48rem .72rem;
+  color: #fff8ea;
+  background: rgba(28,38,26,.72);
+  font: .92rem/1.2 var(--atl-hand);
+}
+
+.atl-title-block,
+.atl-narrow,
+.atl-section,
+.atl-identity { padding-inline: clamp(1.25rem, 5vw, 5rem); }
+
+.atl-title-block {
+  padding-top: clamp(2.5rem,5vw,4.6rem);
+  padding-bottom: clamp(2.5rem,5vw,4.6rem);
+  border-bottom: 1px solid var(--atl-rule);
+}
+.atl-title-block .eyebrow {
+  margin: 0 0 .55rem;
+  color: var(--atl-clay);
+  font: 1.05rem/1.2 var(--atl-hand);
+}
+.atl-title-block h1 {
+  margin: 0;
+  color: var(--atl-green-deep);
+  font: 500 clamp(4.3rem,8vw,8rem)/.86 var(--atl-serif);
+  letter-spacing: -.045em;
+}
+.atl-subtitle {
+  margin: 1rem 0 0;
+  color: var(--atl-soft);
+  font: 1.35rem/1.25 var(--atl-hand);
+}
+
+.atl-narrow {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding-top: clamp(3rem,6vw,5.5rem);
+  padding-bottom: clamp(3rem,6vw,5.5rem);
+}
+.atl-back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--atl-clay);
+  text-decoration: none;
+  font: 600 .9rem/1.2 var(--atl-ui);
+}
+.atl-lede {
+  margin: 0 0 1.3rem;
+  color: var(--atl-green-deep);
+  font: 500 clamp(1.55rem,2.6vw,2.3rem)/1.35 var(--atl-serif);
+}
+.atl-lede.small { font-size: clamp(1.35rem,2vw,1.85rem); }
+
+.atl-identity {
+  max-width: 1120px;
+  margin: 0 auto clamp(4rem,7vw,7rem);
+  display: grid;
+  grid-template-columns: .62fr 1.38fr;
+  gap: clamp(1.2rem,3vw,2.2rem);
+  align-items: center;
+}
+
+.atl-section {
+  padding-top: clamp(4.2rem,7vw,7rem);
+  padding-bottom: clamp(4.2rem,7vw,7rem);
+  border-top: 1px solid var(--atl-rule);
+}
+.atl-soft {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.24), transparent 38%),
+    rgba(248,243,229,.55);
+}
+.atl-heading {
+  max-width: 1040px;
+  margin: 0 auto 2.5rem;
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 1rem;
+}
+.atl-heading > span {
+  padding-top: .45rem;
+  color: var(--atl-clay);
+  font: 700 .72rem/1 var(--atl-ui);
+  letter-spacing: .18em;
+}
+.atl-kicker {
+  margin: 0 0 .45rem;
+  color: var(--atl-clay);
+  font: 1.08rem/1.2 var(--atl-hand);
+}
+.atl-heading h2 {
+  margin: 0;
+  color: var(--atl-green-deep);
+  font: 500 clamp(2.8rem,5vw,4.7rem)/.94 var(--atl-serif);
+  letter-spacing: -.025em;
+}
+.atl-copy,
+.atl-closing-copy {
+  max-width: 860px;
+  margin: 0 auto 2.6rem;
+  font-family: var(--atl-serif);
+  font-size: 1.12rem;
+}
+.atl-people {
+  padding-top: 1rem;
+  border-top: 1px solid var(--atl-rule);
+}
+
+.atl-page figure { margin: 0; min-width: 0; }
+.atl-page figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+.atl-page figcaption {
+  margin-top: .48rem;
+  color: var(--atl-soft);
+  font: .95rem/1.35 var(--atl-hand);
+}
+
+.atl-two-up,
+.atl-three-up,
+.atl-context-grid,
+.atl-duck-grid,
+.atl-mosaic {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.atl-two-up {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: clamp(1rem,2vw,1.6rem);
+  margin-bottom: clamp(1.8rem,3vw,2.6rem);
+}
+.atl-two-up figure img { aspect-ratio: 4/3; }
+.atl-three-up {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: clamp(1rem,2vw,1.5rem);
+  margin-bottom: clamp(1.8rem,3vw,2.6rem);
+}
+.atl-three-up figure img { aspect-ratio: 4/3; }
+
+.atl-wide {
+  max-width: 1280px;
+  margin: 2.2rem auto;
+}
+.atl-wide img {
+  max-height: 760px;
+  min-height: 420px;
+}
+.atl-context-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.15fr .95fr;
+  gap: 1.2rem;
+  margin-top: 2.4rem;
+}
+.atl-context-grid img {
+  height: auto !important;
+  object-fit: contain !important;
+  background: #fff;
+}
+
+.atl-mat {
+  padding: 10px;
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.40),transparent 45%),
+    #fbf6e8;
+  border: 1px solid rgba(112,87,46,.22);
+  box-shadow: 0 10px 24px rgba(51,40,21,.10);
+}
+
+.atl-mosaic-land {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr .9fr;
+  grid-template-rows: 330px 330px;
+  gap: 1rem;
+  max-width: 1280px;
+  margin: 0 auto 2rem;
+}
+.atl-mosaic-land .pond { grid-column: 1/3; grid-row: 1; }
+.atl-mosaic-land .water { grid-column: 3; grid-row: 1; }
+.atl-mosaic-land .ruin1 { grid-column: 1; grid-row: 2; }
+.atl-mosaic-land .ruin2 { grid-column: 2; grid-row: 2; }
+.atl-mosaic-land .forest { grid-column: 3; grid-row: 2; }
+
+.atl-duck-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: clamp(1.5rem,4vw,4rem);
+  align-items: center;
+}
+.atl-duck-grid .atl-mat img {
+  height: auto;
+  object-fit: contain;
+}
+.atl-note {
+  color: var(--atl-soft);
+  font: .95rem/1.5 var(--atl-hand);
+}
+
+.atl-closing-copy { margin-bottom: 3rem; }
+.atl-next {
+  max-width: 930px;
+  margin: 4rem auto 0;
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem 1.5rem;
+  border-top: 1px solid var(--atl-rule);
+}
+.atl-next .atl-kicker { flex-basis: 100%; }
+.atl-next a {
+  color: var(--atl-green);
+  text-decoration: none;
+  font: 600 .9rem/1.2 var(--atl-ui);
+  border-bottom: 1px solid var(--atl-clay);
+}
+
+@media (max-width: 900px) {
+  .atl-page { width: min(100% - 20px,1420px); }
+  .atl-identity,
+  .atl-context-grid,
+  .atl-duck-grid { grid-template-columns: 1fr; }
+  .atl-mosaic-land {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .atl-mosaic-land .pond,
+  .atl-mosaic-land .water,
+  .atl-mosaic-land .ruin1,
+  .atl-mosaic-land .ruin2,
+  .atl-mosaic-land .forest {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .atl-mosaic-land figure img { aspect-ratio: 4/3; }
+}
+@media (max-width: 620px) {
+  .atl-hero { height: 58vh; min-height: 430px; }
+  .atl-two-up,
+  .atl-three-up,
+  .atl-mosaic-land { grid-template-columns: 1fr; }
+  .atl-heading { grid-template-columns: 38px 1fr; }
+  .atl-title-block h1 { font-size: clamp(3.5rem,16vw,5.5rem); }
+}
+
+
+/* A Terra Lumina v7 refinements */
+
+.atl-mat {
+  padding: 12px !important;
+  background: #fbf6e8 !important;
+  border: 1px solid rgba(112,87,46,.22) !important;
+  box-shadow: 0 10px 24px rgba(51,40,21,.10) !important;
+  border-radius: 0 !important;
+}
+.atl-mat img { border-radius: 0 !important; }
+
+.atl-page figcaption,
+.atl-note,
+.atl-hero-caption,
+.atl-kicker,
+.atl-subtitle {
+  font-family: "Architects Daughter", "Segoe Print", cursive !important;
+}
+
+.atl-context-small {
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  max-width: 1100px;
+  gap: 1rem;
+}
+.atl-context-small figure { align-self: start; }
+.atl-context-small img {
+  width: 100%;
+  height: 210px !important;
+  object-fit: contain !important;
+  background: #fff;
+}
+
+.atl-landscape-evening {
+  max-width: 1080px;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.atl-landscape-evening img {
+  min-height: 0;
+  max-height: 620px;
+  object-fit: cover;
+}
+
+.atl-duck-build {
+  margin-top: 1.6rem;
+  margin-bottom: 3rem;
+}
+.atl-duck-build figure img { aspect-ratio: 4 / 3; }
+
+.atl-archive-note {
+  max-width: 1040px;
+  margin: 5rem auto 1.6rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--atl-rule);
+}
+.atl-archive-note h3 {
+  margin: 0;
+  color: var(--atl-green-deep);
+  font: 500 clamp(2rem,4vw,3.4rem)/1 var(--atl-serif);
+}
+.atl-identity-bottom {
+  padding-inline: 0;
+  margin-bottom: 4rem;
+}
+
+.atl-heading::after {
+  content: "";
+  grid-column: 2;
+  width: min(180px, 34vw);
+  height: 1px;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, var(--atl-clay), transparent);
+  opacity: .55;
+}
+
+@media (max-width: 900px) {
+  .atl-context-small { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 620px) {
+  .atl-context-small { grid-template-columns: 1fr; }
+  .atl-context-small img { height: 190px !important; }
+}
+
+/* A Terra Lumina - shared journal language, no leaf / no ornament */
+
+.atl-notes-label {
+  position: relative;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 0 1.25rem;
+  padding-bottom: .42rem;
+  color: var(--atl-clay);
+  font: clamp(1.35rem, 2.5vw, 2rem)/1.05 "Architects Daughter", "Segoe Print", cursive;
+}
+
+.atl-notes-label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: min(100%, 15rem);
+  height: 2px;
+  background: var(--atl-clay);
+  transform: rotate(-1.8deg);
+  transform-origin: left center;
+  opacity: .82;
+}
+
+.atl-intro > p:not(.atl-lede),
+.atl-copy,
+.atl-duck-grid p:not(.atl-lede),
+.atl-closing-copy > p:not(.atl-lede),
+.atl-people,
+.atl-note {
+  font-family: "Architects Daughter", "Segoe Print", cursive !important;
+  line-height: 1.72;
+}
+
+.atl-intro > p:not(.atl-lede),
+.atl-copy,
+.atl-closing-copy > p:not(.atl-lede) {
+  font-size: clamp(1rem, 1.18vw, 1.13rem);
+}
+
+.atl-kicker,
+.atl-page figcaption,
+.atl-subtitle,
+.atl-hero-caption,
+.atl-note,
+.atl-notes-label {
+  font-family: "Architects Daughter", "Segoe Print", cursive !important;
+}
+
+.atl-intro::after {
+  content: "";
+  display: block;
+  width: min(240px, 58%);
+  height: 1px;
+  margin: 2.5rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--atl-clay), transparent);
+  transform: rotate(-.7deg);
+  opacity: .55;
+}
+
+.atl-heading::after {
+  content: "" !important;
+  display: block;
+  grid-column: 2;
+  width: min(180px, 34vw) !important;
+  height: 1px !important;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, var(--atl-clay), transparent) !important;
+  opacity: .55;
+  transform: rotate(-.3deg) !important;
+}
+
+@media (max-width: 680px) {
+  .atl-notes-label { font-size: 1.25rem; }
+}
