@@ -456,3 +456,23 @@
 @media (max-width: 680px) {
   .atl-notes-label { font-size: 1.25rem; }
 }
+
+/* Final geographic-reference layout */
+.atl-context-private {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  max-width: 720px !important;
+  gap: 1.2rem;
+}
+
+.atl-context-private img {
+  height: 190px !important;
+  object-fit: contain !important;
+  background: #fff;
+}
+
+@media (max-width: 650px) {
+  .atl-context-private {
+    grid-template-columns: 1fr !important;
+    max-width: 390px !important;
+  }
+}
