@@ -476,3 +476,14 @@
     max-width: 390px !important;
   }
 }
+
+
+/* Josie cooking photo */
+.atl-food-cooking {
+  max-width: 760px;
+}
+.atl-food-cooking img {
+  min-height: 0;
+  max-height: 680px;
+  object-fit: cover;
+}
